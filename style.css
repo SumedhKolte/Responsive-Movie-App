@@ -1,0 +1,202 @@
+body{
+    background-color: #333;
+    margin: 0;
+    
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.Title{
+    position: absolute;
+    text-align: left;
+    left: 20px;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mid-container{
+    height: 120px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search{
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    margin: 20px;
+}
+
+.search-bar{
+    padding: 12px;
+    width: 230px;
+    border-radius: 1rem;
+    border: none;
+}
+
+.search-bar::placeholder{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.movie-section{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.movie-details {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    left: 23%;
+    margin-top: 3rem;
+}
+
+.movie-img {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.movie-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.movie-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.star {
+    color: #ffcc00;
+    margin-right: 5px;
+}
+
+.rating {
+    font-size: 18px;
+}
+
+.movie-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-meta > div {
+    margin-bottom: 10px;
+}
+
+.genre span,
+.type span,
+.runtime span {
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.plot p {
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.submit{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 1rem;
+    padding: 11px;
+}
+
+.rating, .genre, .type , .runtime , .plot, .movie-title{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        height: 80px;
+    }
+    
+    .Title {
+        font-size: 24px;
+        left: 10px;
+    }
+    
+    .mid-container {
+        height: 100px;
+        flex-direction: column;
+    }
+    
+    .search {
+        font-size: 24px;
+        margin: 10px;
+    }
+    
+    .search-bar {
+        width: 180px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .movie-details {
+        flex-direction: column;
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px;
+    }
+    
+    .movie-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .movie-title {
+        font-size: 20px;
+    }
+    
+    .rating {
+        font-size: 16px;
+    }
+    
+    .genre span,
+    .type span,
+    .runtime span {
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+    
+    .plot p {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
