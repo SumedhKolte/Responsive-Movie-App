@@ -33,7 +33,7 @@ Follow these instructions to set up and run the project on your local machine.
 
 2. Navigate to the project directory:
    ```bash
-   cd MoviesDen
+   cd Responsive-Movie-App
    ```
 
 3. Open `index.html` in your web browser:
@@ -88,7 +88,7 @@ If you want to contribute to this project, feel free to submit a pull request or
 ## Contact
 
 For any inquiries or issues, please contact:
-- Your Name: [Sumedh Kolte](sumedhkolte19@gmail.com)
+- Your Name: (sumedhkolte19@gmail.com)
 - GitHub: [SumedhKolte](https://github.com/SumedhKolte)
 - MoviesDen: (https://sumedhkolte.github.io/Responsive-Movie-App/)
 
